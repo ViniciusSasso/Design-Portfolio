@@ -1,0 +1,418 @@
+html{
+    box-sizing: border-box;
+}
+
+
+body{
+
+    margin: 0;
+    padding: 0;
+    color: white;
+    background-color:#708091;
+    font-family: 'HelveticaNeue',Helvetica,Arial,sans-serif;
+}
+
+a, a:link{
+    text-decoration: none;
+    color: yellow;
+}
+
+a:hover, a img {
+    color: #ffc8c8;
+}
+
+/* a:hover{
+    color:darkorange;
+} */
+
+.icon{
+    width:1em;
+    height:1em;
+    margin-right: .5em;
+}
+
+.ibm-logo, .ibm-logo img{
+    width: 2em;
+}
+
+.page {
+
+}
+
+.featured-work {
+    width: auto;
+    position: absolute;
+    top: -3em;
+    left: 60%;
+    animation: fadeIn 1s;
+}
+
+.featured-work img{
+    width: 100%;
+    height: 100%;
+}
+
+.lucky-star {
+    width:60px;
+    height: 30px;
+    animation: spin 1s 2;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    float: left;
+}
+
+.hi {
+    font-size: 1.2em;
+    position: absolute;
+    top: 7.5em;
+    width: 50%;
+    margin-left: 2em;
+}
+
+.motif{
+    margin-left: 1em;
+}
+
+.wine {
+    width:25px;
+    height: 25px;
+
+}
+
+@keyframes spin { 
+    from { 
+        transform: rotate(0deg); 
+    } to { 
+        transform: rotate(180deg); 
+    }
+}
+
+.jump-button {
+
+margin: auto;
+position: absolute;
+bottom: 3%;
+left: 46%;
+animation: pop ease-out forwards .5s;
+/* animation-delay: 1s; */
+animation-fill-mode: forwards;
+}
+
+.button-ball{
+border-radius: 50%;
+background-color: #0012ff;
+width: 100px;
+height: 100px;
+/* animation: fly infinite 2s; */
+/* position: absolute;
+bottom: 0px; */
+}
+
+img.arrow {
+    width: 50%;
+    height: 50%;
+    position: absolute;
+    left: 25%;
+    top: 22%;
+}
+
+@keyframes fly {
+    0% {bottom: 0px};
+    100% {bottom: 10px};
+}
+
+@keyframes pop {
+    0% {visibility:visible; transform: scale(0)};
+    100% {visibility:visible; transform: scale(1)};
+}
+
+@keyframes fadeIn {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+#showcase{
+    margin: -1px;
+    width: 100%;
+    background-color: #000000;
+}
+
+.padding {
+padding: 1em;
+}
+
+#intro{
+width: auto;
+height: 700px;
+background: url('images/rose-bg.png') 65%;
+}
+
+.icon-intro{
+width: 1.5em;
+height: 2em;
+float: left;
+display: block;
+}
+
+.grad{
+    height: 150px;
+    background: rgb(112,128,145);
+    background: linear-gradient(180deg, rgba(112,128,145,1) 0%, rgba(0,0,0,1) 100%);
+}
+
+.vini-intro{
+float: left;
+font-size: 1.75em;
+width: 50%;
+top:11em;
+left:4em;
+position:absolute;
+animation: pluc 2s;
+
+}
+
+@keyframes pluc {
+    0% {top: -20em;left: -20em};
+    100% {top: 6em;left: 2em};
+}
+
+.spacer {
+padding: 7px 0 7px 0;
+}
+
+.recuo {
+    padding: 0 0 0 10px; 
+}
+
+.heading{
+padding: 4em 1em 1em 2em;
+font-size: 1.5em;
+}
+
+.toolbar-initial
+{
+height: 3em;
+background-color: #fd216f;
+z-index: 1000;
+}
+
+.actions-area{
+display: flex;
+flex-direction: row;
+align-items: baseline;
+}
+
+.actions-area .menu-item{
+font-size: 1.8em;
+margin-left:1em;
+}
+
+.myname{
+font-size: 3em;
+}
+
+#quick-toolbar
+{
+z-index:200;
+padding: 1em 3em 0 1em;
+transition: top ease-in .5s;
+position: fixed;
+top: -100px;
+width: 97.7%;
+background-color: #fd216f;
+height: 2em;
+/* background-color: #aa0066; */
+}
+
+.quick-toolbar-area{
+/* display: flex;
+flex-direction: row;
+align-items: baseline; */
+}
+
+.to-top{
+    /* align-self:flex-end; */
+    display: block;
+    float: right;
+    margin-right: 2em;
+}
+
+.client-info{
+    padding: 0 3em 0 3em; 
+}
+
+.jumper {
+    display: inline-block;
+}
+
+.jumper a{
+    margin-left: 1em;
+}
+
+.quick-link {
+    display: inline-block;
+}
+
+#quick-toolbar.alive
+{
+top: 0;
+}
+
+#contacts {
+height: 95%;
+background-color: blue;    
+}
+
+.piece{
+border: black solid 1px;
+margin: -1px;
+height: 100%; 
+}
+
+.placeholder{
+width: 100%;
+}
+
+.placeholder img{
+    width: 100%;
+    height: auto;
+}
+
+/* Grid */
+.vini-grid-12 {
+width: 100%;
+height: auto;
+}
+
+.vini-grid-6 {
+    width: 50%;
+    height: auto;
+}
+
+.vini-grid-4 {
+    width: 33%;
+    height: auto;
+}
+
+.full, .half, .quarter, .break{
+    height: auto;
+    float: left;
+    display: block;
+}
+
+.full{
+    width: 100%;
+}
+
+.half{
+    width: 50%;  
+}
+
+.quarter{
+    width: 25%;   
+}
+
+.break{
+    clear: both;
+}
+
+.contact-info {
+height: 300px;
+padding: 4em;
+font-size: 2em;    
+}
+
+/* Media queries */
+
+
+@media screen and (min-width: 1080px) {
+    .full {
+    width: 100%;
+    }
+    .half {
+    width: 50%;
+    } 
+    .quarter {
+    width: 25%;
+    } 
+  }
+
+/* Tablet */
+@media only screen and (min-width : 768px) and (max-width : 1024px) {
+    .full {
+        width: 100%;
+    }
+    .half {
+        width: 100%;    
+    }
+    .quarter {
+        width: 50%;
+    } 
+  }
+
+  @media only screen and (min-width : 320px) and (max-width : 767px) {
+    .featured-work {
+display: none;
+    }
+    .icon-intro{
+        display: none;
+        }
+
+    .full {
+        width: 100%;
+    }
+    .half {
+        width: 100%;    
+    }
+    .quarter {
+        width: 100%;
+    } 
+  }
+
+/* Vini Grid is experimental. Don't blame me if it blows your computer up. */
+
+/* Tablet */
+@media screen and (min-width: 768px) {
+    .vini-grid-12 {
+        width: 100%;
+        height: auto;
+    }
+
+    .vini-grid-6 {
+        width: 100%;
+        height: auto;
+    }
+
+    .vini-grid-4 {
+        width: 50%;
+        height: auto;
+    }
+  }
+
+  /* Mobile */
+
+  @media screen and (min-width: 320px) and (max-width: 768px){
+    .icon.menu-icon{
+        display: none;
+        }
+  }
+
+@media screen and (min-width: 320px) {
+
+
+
+    .vini-grid-12 {
+        width: 100%;
+        height: auto;
+    }
+
+    .vini-grid-6 {
+        width: 100%;
+        height: auto;
+    }
+
+    .vini-grid-4 {
+        width: 100%;
+        height: auto;
+    }
+  }
