@@ -9,6 +9,8 @@
     <link rel="stylesheet" href="engaging.css" type="text/css">
     <link rel="stylesheet" href="fonts.css" type="text/css">
     <script src="scripts/jquery-3.5.1.min.js"></script>
+    <script src="scripts/engaging.js"></script>
+    <script type="text/javascript" src="scripts/smooth-parallax.min.js"></script>
 </head>
 
 <body>
@@ -31,15 +33,16 @@
                             src="images/icons/Illustration.svg" />illustrations</a></div>
 
 
-                  <!--           <div class="menu-item"><a href="#gargamel"><img class="icon menu-icon"
-                                src="images/icons/Contacts.svg" />contacts</a></div> -->
-                
+<!--                 <div class="menu-item"><a href="#gargamel"><img class="icon menu-icon"
+                            src="images/icons/Contacts.svg" />contacts</a></div> -->
+
                 <!--                 <div class="menu-item">
                 <div class="quick-link"><a href="#contactsaaa"><img class="icon menu-icon" src="images/icons/Contacts.svg" />contacts</a></div>
             </div> -->
             </div>
-                                        
-        </div><div class="t-border"></div>
+
+        </div>
+        <div class="t-border"></div>
 
         <div id="quick-toolbar" class="quick-toolbar-area">
             <div class="jumper">Jump to:<a href="#clients">clients</a></div>
@@ -66,10 +69,10 @@
 
                 <div class="featured-work">
                     <div class="featured-work-inner">
-                    <a href="#four">
-                        <div class="4oh"><img src="images/4-o-h-intro.jpg" />
-                    </a>
-                </div>
+                        <a href="#four">
+                            <div class="4oh"><img src="images/4-o-h-intro.jpg" />
+                        </a>
+                    </div>
                 </div>
             </div>
 
@@ -227,16 +230,16 @@
                     <div class="placeholder"><img src="images/london.png" /></div>
                 </div>
                 <div class="row">
-            
-                <div class="piece half">
-                    <div class="placeholder"><img src="images/n_s_n_a.png" /></div>
-                </div>
-                <div class="piece half">
-                    <div class="placeholder"><img src="images/n_s_n_a.png" /></div>
-                </div>
 
-                <div class="clear"></div>
-            </div>
+                    <div class="piece half">
+                        <div class="placeholder"><img src="images/n_s_n_a.png" /></div>
+                    </div>
+                    <div class="piece half">
+                        <div class="placeholder"><img src="images/n_s_n_a.png" /></div>
+                    </div>
+
+                    <div class="clear"></div>
+                </div>
                 <div id="four" class="piece full">
                     <div class="heading">4 of Hearts - the band - an online collaboration project by IBM Design</div>
                     <div class="placeholder"><img src="images/wild01.png" /></div>
@@ -245,23 +248,76 @@
                     <div class="placeholder"><img src="images/wild05.jpg" />
                     </div>
                 </div><div class="clear"></div>
+                <div class="clear"></div>
             </div>
 
-<!--             <div>
-                <div id="gargamel" class="contact-info">
-                    <div class="info1">LinkedIn: <a target="new"
-                            href="https://www.linkedin.com/in/vinisasso/">https://www.linkedin.com/in/vinisasso/</a>
+
+
+       <!--      <div id="contacts">
+                <section>
+                    <div id="viewport-contatos">
+                        <div id="fundinho-contatos"
+                        smooth-parallax=""
+                        start-movement="-.5"
+                        end-movement=".7"
+                        start-position-y="2">
+                        </div>
+
+                        <div class="contact-info">
+                            <div class="resume">
+                                <div class="resume-details">
+                                    <div class="education">
+                                    <h2>Education</h2>
+                                    <p>
+                                    Graduated at Visual Design at Universidade Estadual Júlio de Mesquita Filho - Unesp, in Bauru, SP - Brazil (2003)</p>
+                                </div>
+                                <div class="Experience">
+                                    <h2>Experience</h2>
+                                    <p>UI/UX Designer for IBM projects (2016-current)</p>
+                                    <p>Webdesigner - Miami Store eCommerce (2013-2016)</p>
+                                    <p>Visual Designer/Art direction - Residenciais magazine (2008/2013)</p>
+                                    <p>Freelance Visual Designer/Art direction/Ilustration for advertising campaigns (2003/2008)</p>
+                                    <p>Visual Designer - Alto Astral publishing company (2003)</p>
+
+                                </div>
+                                </div>
+                            </div>
+                            <div class="bio">Bio
+                                <div class="bio-details">
+                                    Brazilian. Descendent from italians. 
+                                </div>
+                                
+                            </div>
+                            <div class="find-me-at">
+                            You can also find me at:
+                            <div class="media-logos">
+                            <div class="info1">
+                                <a target="new"
+                                    href="https://www.linkedin.com/in/vinisasso/"><img class="social-networks linkedin" src="images/social-linkedin.svg" /></a>
+                            </div>
+                            <div class="info2"><a target="new"
+                                    href="https://www.deviantart.com/vinicius-sasso"><img class="social-networks deviantart" src="images/deviantart-white.svg" /></a>
+                            </div>
+                            <div class="info3">
+                                <a target="new"
+                                    href="https://www.facebook.com/vinicius.sasso.designer"><img class="social-networks facebook" src="images/social-facebook.svg" /></a>
+                            </div>
+                            
+                            </div>
+                            </div>
+            
+                        </div>
+
+
+
                     </div>
-                    <div class="info2">Deviant Art: <a target="new"
-                            href="https://www.deviantart.com/vinicius-sasso">https://www.deviantart.com/vinicius-sasso</a>
-                    </div>
+                    
+                </section>
+            </div> -->
 
-                </div>
-            </div>  -->
+<div id ="gargamel"></div>
 
-
-
-        </div>
+</div>
 
 
     </div>
@@ -269,6 +325,12 @@
 
 
     <script>
+        window.addEventListener("load", function () {
+            SmoothParallax.init({
+                basePercentageOn: "containerVisibility"
+            });
+        });
+
         jQuery($ => {
             $(document).scroll(function () {
                 var y = $(this).scrollTop();
