@@ -303,22 +303,8 @@ width: 100%;
 }
 
 /* Grid */
-.vini-grid-12 {
-width: 100%;
-height: auto;
-}
 
-.vini-grid-6 {
-    width: 50%;
-    height: auto;
-}
-
-.vini-grid-4 {
-    width: 33%;
-    height: auto;
-}
-
-.full, .half, .quarter, .break{
+.full, .half, .quarter, .onethird, .twothirds, .break{
     height: auto;
     float: left;
     display: block;
@@ -328,8 +314,16 @@ height: auto;
     width: 100%;
 }
 
+.twothirds{
+    width: 67%;
+}
+
 .half{
     width: 50%;  
+}
+
+.onethird{
+    width: 33%;
 }
 
 .quarter{
@@ -344,6 +338,15 @@ height: auto;
 height: 300px;
 padding: 4em;
 font-size: 2em;    
+}
+
+.row{
+    height: 100%;
+    background-color: white;
+}
+
+.clear{
+    clear:both;
 }
 
 /* Media queries */
