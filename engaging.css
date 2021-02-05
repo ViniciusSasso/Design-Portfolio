@@ -206,6 +206,37 @@ padding: 4em 1em 1em 2em;
 font-size: 1.5em;
 }
 
+p.heading-small{
+/* padding: 4em 1em 1em 2em; */
+font-size: 1rem;
+}
+
+.heading-half-left, .heading-half-right{
+width: 66%;
+}
+
+
+.heading-half-right{
+    display: block;
+    float: right;
+}
+
+.heading-half-left{
+text-align: left;
+}
+
+.small-padding-left{
+    padding: 1em 0.5em 1em 1em;
+}
+
+.small-padding-right{
+    padding: 1em 1em 1em 0.5em;
+}
+
+.heading-half-right, .heading-half-right p{
+text-align: right;
+}
+
 .toolbar-initial
 {
 position: absolute;
@@ -448,6 +479,18 @@ width: 30%;
         height: 80px;
         }
 
+        .heading-half-left, .heading-half-right{
+            width: 100%;
+            }
+
+            .heading-half-right{
+                display: block;
+                float: left;
+                }
+                .heading-half-right, .heading-half-right p{
+                    text-align: left;
+                }
+
     .full {
         width: 100%;
     }
@@ -514,6 +557,19 @@ animation: fillborder 1s ease-out;
     .featured-work {
     display: none;
     }
+
+    .heading-half-left, .heading-half-right{
+        width: 100%;
+        }
+
+        .heading-half-right{
+        display: block;
+        float: left;
+        }
+        .heading-half-right, .heading-half-right p{
+            text-align: left;
+        }
+
     
     .icon.menu-icon{
         display: none;
