@@ -5,6 +5,12 @@ html{
     box-sizing: border-box;
 }
 
+li, ul {
+    display: block;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
 
 body{
 
@@ -18,10 +24,12 @@ body{
 a, a:link{
     text-decoration: none;
     color: yellow;
+    cursor: pointer;
 }
 
 a:hover, a img {
     color: #ffc8c8;
+    cursor: pointer;
 }
 
 /* a:hover{
@@ -44,13 +52,14 @@ a:hover, a img {
 
 .featured-work {
     width: 40%;
-    height: 100vw;
+    height: 60vw;
     position: absolute;
     top: -3em;
     right: 0%;
     animation: fadeIn 1s;
     z-index: 900;
     overflow: hidden;
+    cursor: pointer;
 }
 
 .featured-work-inner{
@@ -317,6 +326,36 @@ z-index:1;
 top: 0;
 }
 
+#interstitial{
+    position: relative;
+    height: 300px;
+    background-color: black;
+}
+
+
+
+.outer-space{
+    POSITION: relative;
+    height: 600px;
+/*     display: flex;
+    align-items: center;
+    flex-direction: row; */
+}
+
+#interstitial .lucky-star{
+
+    margin-top: 3em;
+    width: 120px;
+    height: 60px;
+}
+
+.atmosphere{
+    position: relative;
+    bottom: 0;
+    height: 800px;
+    background: linear-gradient(180deg, rgba(0,0,0,1) 0%, #fd216f 100%);
+}
+
 #contacts {
 height: 95%;
 background-color: blue;    
@@ -337,7 +376,7 @@ width: 100%;
 
 #viewport-contatos{
     background-color: #fd216f;
-    height: 600px;
+    height: 620px;
     width: 100%;
     position: relative;
     overflow: hidden;
@@ -351,16 +390,43 @@ width: 100%;
     height: 80%;
 }
 
+.column-bio {
+    width: 30%;
+    display: block;
+    float: left;
+}
+
+.photo {
+/* clip-path: ellipse(7em 7em at 10.5EM 8.75em); */
+clip-path: inset(12px 0px 50px 4px);
+}
+
+.my-photo {
+width: 50%;
+height: 100%;
+
+}
+
 .contact-info {
     position: absolute;
     height: 80%;
     width: 100%;
     padding: 4em;
     font-weight: 200;
-    font-size: 1em;
+    font-size: 1rem;
     z-index: 1;
     top: 6em;
     }
+
+    .contact-info h3 {
+        margin-bottom: 0;
+    }
+
+.row-info{
+    padding-bottom: 1em;
+    margin-bottom: 1em;
+    border-bottom: solid 1px white;
+}
 
 section img, section div{
     
@@ -369,38 +435,43 @@ section img, section div{
 width: 70%;
 display: block;
 float: left;
+padding-right: 4em;
 }
 
 .bio {
-width: 30%;
-display: block;
-float: left;
 }
 
 .find-me-at{
-width: 30%;
+}
+
+.experience {
+
 }
 
 .media-logos {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: flex-start;
     align-items: center;
+    width: 70%;
 }
 
 .social-networks.linkedin {
     width: 2em;
     height: 2em;
+    margin-right: 1em;
 }
 
 .social-networks.deviantart {
     width: 5.4em;
     height: 1.4em;
+    margin-right: 1em;
 }
 
 .social-networks.facebook {
     width: 2em;
     height: 2em;
+    margin-right: 1em;
 }
 
 
@@ -447,8 +518,17 @@ width: 30%;
 
 /* Media queries */
 
+@media screen and (min-width: 1200px) {
+    .lucky-star.hd {
+    display: block;
+    }
+  }
 
 @media screen and (min-width: 1080px) {
+    .lucky-star.hd {
+        display: none;
+        }
+
     .full {
     width: 100%;
     }
@@ -462,11 +542,16 @@ width: 30%;
 
 /* Tablet */
 @media only screen and (min-width : 768px) and (max-width : 1024px) {
+
+    .no-tablet{
+        display: none;
+    }
+
     .vini-intro{
         display: none;
     }
 
-    .lucky-star.web {
+    .lucky-star.web, .lucky-star.hd {
         display: none;
     }
 
@@ -505,6 +590,9 @@ width: 30%;
   /* Mobile */
   @media only screen and (min-width : 320px) and (max-width : 767px) {
 
+    .no-mobile{
+        display: none;
+    }
 
 .toolbar-initial
 {
@@ -540,7 +628,7 @@ animation: fillborder 1s ease-out;
         display: none;
     }
 
-    .lucky-star.tablet, .lucky-star.web {
+    .lucky-star.tablet, .lucky-star.web, .lucky-star.hd {
         display: none;
     }
 
@@ -596,8 +684,3 @@ animation: fillborder 1s ease-out;
   }
 
 /* Vini Grid is experimental. Don't blame me if it blows your computer up. */
-
-/* Tablet */
-@media screen and (min-width: 768px) {
-
-  }
