@@ -326,20 +326,45 @@ z-index:1;
 top: 0;
 }
 
-#interstitial{
+#viewport-interstitial{
     position: relative;
-    height: 300px;
-    background-color: black;
+    height: 600px;
+    width: 100%;
+    overflow:visible;
+    background-image: url('images/starfield.png');
+    background-size: 100%;
+    background-color: blue;
 }
 
+#outer-space{
+    position: absolute;
+    top: -2em;
+    left: 20%;
+    width: 25%;
+    height: 25%;
+/*     background-image: url('images/star-very-small.svg');
+    background-repeat: no-repeat; */
+}
 
+#outer-space2{
+    display: block;
+    position: absolute;
+    bottom: 1em;
+    left: 40%;
+    z-index: 100;
+}
 
-.outer-space{
-    POSITION: relative;
-    height: 600px;
-/*     display: flex;
-    align-items: center;
-    flex-direction: row; */
+#outer-space3{
+position: absolute;
+top: 2em;
+right: 10%;
+/* background-image: url('images/star-very-small.svg');
+background-repeat: no-repeat; */
+}
+
+img.super-star{
+/*     width: 100%;
+    height: 100%; */
 }
 
 #interstitial .lucky-star{
@@ -354,6 +379,14 @@ top: 0;
     bottom: 0;
     height: 800px;
     background: linear-gradient(180deg, rgba(0,0,0,1) 0%, #fd216f 100%);
+}
+
+.test, div.test> *{
+    display: none;
+}
+
+.atmosphere img{
+    width: 100%;
 }
 
 #contacts {
@@ -372,6 +405,10 @@ width: 100%;
 .placeholder img{
     width: 100%;
     height: auto;
+}
+
+.heffaloomp {
+width: 25%;
 }
 
 #viewport-contatos{
@@ -473,6 +510,11 @@ padding-right: 4em;
     height: 2em;
     margin-right: 1em;
 }
+
+#Gargamel{
+    display:none;
+}
+
 
 
 /* Grid */
