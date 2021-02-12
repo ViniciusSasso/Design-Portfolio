@@ -91,6 +91,7 @@ a:hover, a img {
     top: 7.5em;
     width: 50%;
     margin-left: 2em;
+    z-index: 3;
 }
 
 .motif{
@@ -172,6 +173,7 @@ padding: 1em;
 width: auto;
 height: 700px;
 background: url('images/rose-bg.png') 65%;
+/* background-color: rgba(253,33,111,1); */
 }
 
 .icon-intro{
@@ -195,6 +197,18 @@ top:11em;
 left:4em;
 position:absolute;
 animation: pluc 2s;
+z-index: 1;
+}
+
+.vini-intro-mask{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgb(253,33,111);
+    background: linear-gradient(0deg, rgba(253,33,111,0) 0%, rgba(253,33,111,1) 20%, rgba(253,33,111,1) 100%);
+    width: 24em;
+    height: 20em;
+    z-index: 2;
 }
 
 @keyframes pluc {
