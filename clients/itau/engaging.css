@@ -116,7 +116,7 @@ a:hover, a img {
 }
 
 .jump-button {
-
+z-index: 5;
 margin: auto;
 position: absolute;
 bottom: 3%;
