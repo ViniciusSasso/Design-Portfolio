@@ -86,10 +86,10 @@ a:hover, a img {
 }
 
 .hi {
-    font-size: 1.2em;
+    font-size: 1em;
     position: absolute;
     top: 7.5em;
-    width: 50%;
+    width: 55%;
     margin-left: 2em;
     z-index: 3;
 }
@@ -193,7 +193,7 @@ display: block;
 float: left;
 font-size: 1.75em;
 width: 50%;
-top:11em;
+top:13em;
 left:4em;
 position:absolute;
 animation: pluc 2s;
